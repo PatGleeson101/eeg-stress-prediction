@@ -7,7 +7,7 @@ This repository compares the performance of static and constructive neural netwo
 Note that 5-run k-fold cross-validation can take a while to run.
 
 In addition to packages from the standard library, you'll need:
-> `sklearn, torch, matplotlib, seaborn, numpy, pandas, ipympl`.
+> `sklearn, torch, matplotlib, seaborn, numpy, pandas, ipympl, openpyxl`.
 
 All other python files are helpers:
 - `constr_casc.py` defines the constructive cascade network architecture (Casper).

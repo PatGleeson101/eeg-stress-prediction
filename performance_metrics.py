@@ -162,9 +162,10 @@ class RealtimeTrainingFig:
     for line in ax_loss.lines+ax_acc.lines:
       line.set_animated(False)
     # Add training and test lines for this fold
-    color=next(ax_loss._get_lines.prop_cycler)['color']
-    line_args = {'animated': True, 'color': color, 'marker': '.', 'ms': 3}
+    #color=next(ax_loss._get_lines.prop_cycler)['color'] # Broken since mpl3.8
+    line_args = {'animated': True, 'marker': '.', 'ms': 3}
     self.line_trainLoss, = ax_loss.plot([], [], **line_args)
+    line_args['color'] = self.line_trainLoss.get_color()
     self.line_trainAcc, = ax_acc.plot([], [], **line_args)
     self.line_testLoss, = ax_loss.plot([], [], linestyle='--', **line_args)
     self.line_testAcc, = ax_acc.plot([], [], linestyle='--', **line_args)
