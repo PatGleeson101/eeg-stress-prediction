@@ -4,3 +4,4 @@ __pycache__/
 data/features_processed_f7.pt
 data/features_processed_all.pt
 data/features_processed_no_outliers.pt
+.python-version
