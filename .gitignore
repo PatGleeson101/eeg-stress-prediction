@@ -1,0 +1,6 @@
+.DS_Store
+__pycache__/
+.ipynb_checkpoints/
+data/features_processed_f7.pt
+data/features_processed_all.pt
+data/features_processed_no_outliers.pt
